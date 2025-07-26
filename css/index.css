@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merriweather&family=Outfit&display=swap');
+
+.merriweather-mainFont{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-image: url('../img/icsrFRU.png') no-repeat center cover scroll;
+    background-color: transparent;
+}
+
+main{
+    text-align: center;
+    color:white;
+}
+
+.mainContent{
+    overflow:auto;
+    position: relative;
+    height:600px;
+}
+
+.mainContent::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('../img/icsrFRU.png'); 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    width:100%;
+    height:100%;
+    filter:brightness(50%);
+    height:600px;
+}
+
+.sr-only{
+    border:0;
+    clip:rect(0,0,0,0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.skip-link{
+    background:black;
+    color:#fff;
+    font-weight: 700;
+    padding:4px;
+    position:absolute;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus{
+    transform: translateY(0%);
+}
+
+.skip-link{
+    transition: transform 0.3s;
+}
+
+#slD{
+    border-bottom: 8px #438ACC solid;
+}
+
+#srD, #slD{
+    border-top:8px #438ACC solid;
+}
+
+.container{
+  max-width: 1900px;
+  margin: 0 auto;
+  display: grid;
+  width: 100vw;
+  /* height: 100vh; */
+  grid-template-columns:
+   1fr       1fr       1fr       1fr;
+  grid-template-areas:
+  "head     head     head     head"
+  "nav     nav     nav     nav"
+  "main     main     main     main"
+  "foot     foot     foot     foot";
+}
+
+header, nav, aside, footer{
+    padding: 1.5em;
+    /* border: 2px black solid; */
+}
+
+footer {
+  text-align: center;
+}
+
+header {grid-area: head; background:#282b2a3b;}
+nav {grid-area: nav; background:#7BE9F6;}
+main {grid-area: main; max-height: 100%;}
+footer {grid-area: foot; background: #56B4C3;}
+
+ul li{
+    list-style: none;
+}
+
+#reference ul li{
+    margin:10px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+ul li a:link{
+    color:blue;
+}
+
+#reference ul li a:link{
+    text-decoration: underline;
+}
+
+ul li a:visited{
+    color:black;
+}
+
+ul li a:hover{
+    color:black;
+    background:white;
+}
+
+ul li a:active{
+    color:coral;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+    
+nav ul li {
+    list-style: none
+}
