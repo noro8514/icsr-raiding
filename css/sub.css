@@ -124,3 +124,8 @@ nav ul {
 nav ul li {
     list-style: none
 }
+
+.carousel-inner .carousel-item .tall-img{
+    height:702px;
+    width:auto;
+}
